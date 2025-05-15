@@ -37,7 +37,8 @@ def main():
     customerName = input()
     print("Hello {}, what would you like to order today?".format(customerName))
     print("="*80)
-    
+    print("Hi")
+
 
 
 main()

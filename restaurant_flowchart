@@ -1,0 +1,21 @@
+digraph {
+	rankdir=LR size=8
+	Start [label=Start]
+	Init [label="Initialize Restaurant
+(menu_items={}, book_table=[], customer_orders=[])"]
+	AddMenu [label="Add Menu Items"]
+	BookTable [label="Book Tables"]
+	OrderItems [label="Customer Orders"]
+	PrintMenu [label="Print Menu Items"]
+	PrintTables [label="Print Table Reservations"]
+	PrintOrders [label="Print Customer Orders"]
+	End [label=End]
+	Start -> Init
+	Init -> AddMenu
+	AddMenu -> BookTable
+	BookTable -> OrderItems
+	OrderItems -> PrintMenu
+	PrintMenu -> PrintTables
+	PrintTables -> PrintOrders
+	PrintOrders -> End
+}
